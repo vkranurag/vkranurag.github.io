@@ -8,9 +8,10 @@
   --font-semi: 600;
 }
 
-a:hover{
-  text-decoration:none;
-}
+a:hover, /* OPTIONAL*/
+a:visited,
+a:focus
+{text-decoration: none !important;}
 /* COLOURS */
 :root{
   --first-color: #008080;

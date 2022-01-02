@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/styles.css">
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        
+        <!-- BOX ICONS -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <title>Anurag</title>
+
+        <script>
+            function setCookie(cname,cvalue,exdays) {
+              const d = new Date();
+              d.setTime(d.getTime() + (exdays*24*60*60*1000));
+              let expires = "expires=" + d.toGMTString();
+              document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+            }
+            
+            function getCookie(cname) {
+              let name = cname + "=";
+              let decodedCookie = decodeURIComponent(document.cookie);
+              let ca = decodedCookie.split(';');
+              for(let i = 0; i < ca.length; i++) {
+                let c = ca[i];
+                while (c.charAt(0) == ' ') {
+                  c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                  return c.substring(name.length, c.length);
+                }
+              }
+              return "";
+            }
+            
+            </script>
+    </head>
+    <body onload="checkCookie();">
+        
+
+        <!-- HEADER -->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">Anurag</a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="assets/img/Anurag Vinodkumar.pdf" class="nav__link">Resume</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+
+
+            <!-- HOME -->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title">Hi,<br>I am <span class="home__title-color">Anurag Vinodkumar</span><br></h1>
+                </div>
+
+                <div class="home__social">
+                    <a href="https://github.com/Ragify" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                    <a href="https://www.instagram.com/anurag_vinodkumar/" class="home__social-icon"><i class='bx bxl-instagram'></i></a>
+                    <a href="https://twitter.com/anur4gvk" class="home__social-icon"><i class='bx bxl-twitter' ></i></a>
+
+                </div>
+
+                <div class="home__img">    
+                    <img src="assets/img/perfil.png" alt="">
+                </div>
+            </section>
+
+
+            <!-- ABOUT -->
+            <section class="about section " id="about">
+                <h2 class="section-title">About</h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="assets/img/about.jpg" alt="">
+                    </div>
+                    
+                    <div>
+                        <h2 class="about__subtitle">Anurag Vinodkumar</h2>
+                        <p class="about__text">I am a Devolper and a Designer. Currrently I am a Computer Science undergraduate at Amrita School of Engineering, Kollam. I am also a member of amFOSS, a Free and Open-Source Software club.</p>           
+                    </div>                                   
+                </div>
+            </section>
+
+
+            <!-- SKILLS -->
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Skills</h2>
+
+                <div class="skills__container bd-grid"> 
+                    <div>
+                        <img src="assets/img/skills.jpg" alt="" class="skills__img">              
+                    </div>         
+                    <div>
+                        <h2 class="skills__subtitle">Web Developing and Programming</h2>
+                        <p class="skills__text">Beginner programmer and web developer. Programming languages: Python, C, C++. Web developing using Django.</p>
+                        <h2 class="skills__subtitle">Photography and Designing</h2>
+                        <p class="skills__text">An intermediate Photographer and Designer. Can work well with Photoshop, Priemere Pro, Lightroom, etc.</p>
+                        <h2 class="skills__subtitle">Gaming</h2>
+                        <p class="skills__text">Competetive Gamer, plays competetive games like Rocket League, Minecraft, Fortnite and also plays single player games.</p>
+                        
+                    
+                </div>
+            </section>
+
+
+            <!-- CONTACT -->
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Contact</h2>
+
+                <div class="contact__container bd-grid">
+                    <form action="" onsubmit='return Validate();' class="contact__form">
+                        <input type="text" placeholder="Name" class="contact__input">
+                        <input type="mail" id="email" placeholder="Email" class="contact__input">
+                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+                        <input type="submit" value="Send" class="contact__button button">
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        
+        <!-- FOOTER -->
+        <footer class="footer">
+            <p class="footer__title">Anurag</p>
+            <div class="footer__social">
+                <a href="https://github.com/Ragify" class="footer__icon"><i class='bx bxl-github' ></i></a>
+                <a href="https://www.instagram.com/anurag_vinodkumar/" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+                <a href="https://twitter.com/anur4gvk" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+            </div>
+            <p>&#169; 2021. All Rights Reserved.</p>
+        </footer>
+
+        <script>
+            function Validate() {
+              var email = document.getElementById('email').value;
+              var x=email.indexOf('@');
+              var y=email.lastIndexOf('.');
+              var condition = email.length>0 && x>0 && y>x+2 && email[y+1]!=='.' && email.indexOf(' ')===-1 && email.indexOf('..') ===-1;
+              if (condition){
+                alert('Respsonse sent.');
+              }
+              else alert('Invalid email!');
+            }
+          </script>
+    </body>
+</html>

@@ -164,7 +164,6 @@ img{
 /* nav overlay */
 .nav__link:hover{
   position: relative;
-  background-color: var(--first-color);
 }
 /* nav overlay 2 */
 .nav__link:hover::after{

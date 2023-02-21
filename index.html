@@ -1,139 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="assets/css/styles.css">
-        
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-        
-        <!-- BOX ICONS -->
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+<head>
+  <title>Anurag Vinodkumar</title>
+  <link rel="stylesheet" href="assets/css/main.css">
+  
+</head>
+<body>
 
-        <title>Anurag Vinodkumar</title>
+<!-- notification for small viewports and landscape oriented smartphones -->
+<div class="device-notification">
+  <a class="device-notification--logo" href="#0">
+  </a>
+  <p class="device-notification--message">This site has so much to offer that we must request you orient your device to portrait or find a larger screen. You won't be disappointed.</p>
+</div>
 
-        <script>
-            function setCookie(cname,cvalue,exdays) {
-              const d = new Date();
-              d.setTime(d.getTime() + (exdays*24*60*60*1000));
-              let expires = "expires=" + d.toGMTString();
-              document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-            }
-            
-            function getCookie(cname) {
-              let name = cname + "=";
-              let decodedCookie = decodeURIComponent(document.cookie);
-              let ca = decodedCookie.split(';');
-              for(let i = 0; i < ca.length; i++) {
-                let c = ca[i];
-                while (c.charAt(0) == ' ') {
-                  c = c.substring(1);
-                }
-                if (c.indexOf(name) == 0) {
-                  return c.substring(name.length, c.length);
-                }
-              }
-              return "";
-            }
-            
-            </script>
-    </head>
-    <body onload="checkCookie();">
-        
-
-        <!-- HEADER -->
-        <header class="l-header">
-            <nav class="nav bd-grid">
-                <div>
-                    <a href="#" class="nav__logo">Anurag Vinodkumar</a>
-                </div>
-
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                        <li class="nav__item"><a href="assets/img/Anurag Vinodkumar.pdf" target="_blank" class="nav__link">Resume</a></li>
-                    </ul>
-                </div>
-
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
-                </div>
-            </nav>
+<div class="perspective effect-rotate-left">
+  <div class="container"><div class="outer-nav--return"></div>
+    <div id="viewport" class="l-viewport">
+      <div class="l-wrapper">
+        <header class="header">
+          <a class="header--logo" href="/index.html">
+            <p>Anurag Vinodkumar</p>
+          </a>
+          <div class="header--nav-toggle">
+            <span></span>
+          </div>
         </header>
-
-        <main class="l-main">
-
-
-            <!-- HOME -->
-            <section class="home bd-grid" id="home">
-                <div class="home__data">
-                    <h1 class="home__title">Hi,<br>I am <span class="home__title-color">Anurag Vinodkumar</span><br></h1>
-                </div>
-
-                <div class="home__social">
-                    <a href="https://github.com/Ragify" class="home__social-icon" target="_blank"><i class='bx bxl-github' ></i></a>
-                    <a href="https://www.linkedin.com/in/anurag-vinodkumar/" class="home__social-icon" target="_blank"><i class='bx bxl-linkedin' ></i></a>
-                    <a href="https://www.instagram.com/anurag_vinodkumar/" class="home__social-icon" target="_blank"><i class='bx bxl-instagram'></i></a>
-                    <a href="https://twitter.com/anur4gvk" class="home__social-icon" target="_blank"><i class='bx bxl-twitter' ></i></a>
-
-                </div>
-
-                <div class="home__img">    
-                    <img src="assets/img/perfil.png" alt="">
-                </div>
-            </section>
-
-
-            <!-- ABOUT -->
-            <section class="about section " id="about">
-                <h2 class="section-title">About</h2>
-
-                <div class="about__container bd-grid">
-                    <div class="about__img">
-                        <img src="assets/img/about.jpg" alt="">
-                    </div>
-                    
-                    <div>
-                        <h2 class="about__subtitle">Anurag Vinodkumar</h2>
-                        <p class="about__text">I am a Devolper and a Designer. Currrently I am a Computer Science undergraduate at Amrita School of Engineering, Kollam. I am a former member of amFOSS, a Free and Open-Source Software club.</p>           
-                    </div>                                   
-                </div>
-            </section>
-
-
-            <!-- SKILLS -->
-            <section class="skills section" id="skills">
-                <h2 class="section-title">Skills</h2>
-
-                <div class="skills__container bd-grid"> 
-                    <div>
-                        <img src="assets/img/skills.jpg" alt="" class="skills__img">              
-                    </div>         
-                    <div>
-                        <h2 class="skills__subtitle">Web Developing and Programming</h2>
-                        <p class="skills__text">Beginner programmer and web developer. Programming languages: Python, C, C++. Web developing using Django.</p>
-                        <h2 class="skills__subtitle">Photography and Videography</h2>
-                        <p class="skills__text">An intermediate Photographer, Videographer Designer. Can work well with Photoshop, Priemere Pro, Lightroom, etc.</p>
-                        <h2 class="skills__subtitle">Hobbies</h2>
-                        <p class="skills__text">Traveling, photography and videography, listening to music, singing, gaming, etc.</p>
-                        
-                    
-                </div>
-            </section>
-
-        
-        <!-- FOOTER -->
-        <footer class="footer">
-            <p class="footer__title">Anurag Vinodkumar</p>
-            <div class="footer__social">
-                <a href="https://github.com/Ragify" class="footer__icon" target="_blank"><i class='bx bxl-github' ></i></a>
-                <a href="https://www.linkedin.com/in/anurag-vinodkumar/" class="footer__icon" target="_blank"><i class='bx bxl-linkedin' ></i></a>
-                <a href="https://www.instagram.com/anurag_vinodkumar/" class="footer__icon" target="_blank"><i class='bx bxl-instagram' ></i></a>
-                <a href="https://twitter.com/anur4gvk" class="footer__icon" target="_blank"><i class='bx bxl-twitter' ></i></a>
+        <nav class="l-side-nav">
+          <ul class="side-nav">
+            <li class="is-active"><span>Home</span></li>
+            <li><span>About</span></li>
+            <li><span>Links</span></li>
+            <li><span>Resume</span></li>
+          </ul>
+        </nav>
+        <ul class="l-main-content main-content">
+          <li class="l-section section section--is-active">
+            <div class="intro">
+              <div class="intro--banner">
+                <h1>Hi,<br>I am Anurag</h1>
+                <button class="cta">Resume
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                    <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
+                  </g>
+                  </svg>
+                  <span class="btn-background"></span>
+                </button>
+                <img src="assets/img/introduction-visual.png" alt="Welcome">
+              </div>
+              <div class="intro--options">
+                <a href="#0">
+                  <h3>Web Developing &amp; Programming</h3>
+                  <p>Beginner programmer and web developer. Programming languages: Python, C, C++.<br>Web development using Django.</p>
+                </a>
+                <a href="#0">
+                  <h3>Photography &amp; Videography</h3>
+                  <p>An intermediate photographer and videographer. Editing tools used are Photoshop, Priemere Pro, Lightroom, etc.</p>
+                </a>
+                <a href="#0">
+                  <h3>Hobbies &amp; <br>Interests</h3>
+                  <p>Traveling, movies, cars, <br>photography and videography, listening to music, singing, gaming, etc.</p>
+                </a>
+              </div>
             </div>
-        </footer>
-    </body>
+          </li>
+          <li class="l-section section">
+            <div class="work">
+              <h2>About</h2>
+              <div class="work--lockup">
+                <ul class="slider">
+                  <li class="slider--item slider--item-right">
+                    <a href="#0">
+                      <div class="slider--item-image">
+                        <img src="assets/img/music.png" alt="Victory">
+                      </div>
+                      <p class="slider--item-title">Music</p>
+                      <p class="slider--item-description"></p>
+                    </a>
+                  </li>
+                  <li class="slider--item slider--item-center">
+                    <a href="#0">
+                      <div class="slider--item-image">
+                        <img src="assets/img/photography.png" >
+                      </div>
+                      <p class="slider--item-title">Photography</p>
+                      <p class="slider--item-description"></p>
+                    </a>
+                  </li>
+                  <li class="slider--item slider--item-left">
+                    <a href="#0">
+                      <div class="slider--item-image">
+                        <img src="assets/img/travel.png">
+                      </div>
+                      <p class="slider--item-title">Travel</p>
+                      <p class="slider--item-description"></p>
+                    </a>
+                  </li>
+                  <li class="slider--item slider--item-right-right">
+                    <a href="#0">
+                      <div class="slider--item-image">
+                        <img src="assets/img/cinema.png">
+                      </div>
+                      <p class="slider--item-title">Cinema</p>
+                      <p class="slider--item-description"></p>
+                    </a>
+                  </li>
+                </ul>
+                <div class="slider--prev">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                    <path d="M561,1169C525,1155,10,640,3,612c-3-13,1-36,8-52c8-15,134-145,281-289C527,41,562,10,590,10c22,0,41,9,61,29
+                    c55,55,49,64-163,278L296,510h575c564,0,576,0,597,20c46,43,37,109-18,137c-19,10-159,13-590,13l-565,1l182,180
+                    c101,99,187,188,193,199c16,30,12,57-12,84C631,1174,595,1183,561,1169z"/>
+                  </g>
+                  </svg>
+                </div>
+                <div class="slider--next">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                    <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
+                  </g>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </li>
+          
+          <li class="l-section section">
+            <div class="contact">
+              <div class="contact--lockup">
+                <div class="modal">
+                  <div class="modal--information">
+                    <a href="mailto:vkranurag@gmail.com">vkranurag@gmail.com</a>
+                  </div>
+                  <ul class="modal--options">
+                    <li><a href="https://github.com/Ragify">Github</a></li>
+                    <li><a href="https://www.linkedin.com/in/anurag-vinodkumar/">LinkedIn</a></li>
+                    <li><a href="https://www.instagram.com/anurag_vinodkumar/">Instagram</a></li>
+                    <li><a href="https://twitter.com/anur4gvk">Twitter</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+          
+        
+          <li class="l-section section">
+            <div class="work">
+              <iframe src="/assets/img/Anurag Vinodkumar.pdf" width="100%" height="500px">
+              </iframe>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+  <ul class="outer-nav">
+    <li class="is-active">Home</li>
+    <li>About</li>
+    <li>Links</li>
+    <li>Resume</li>
+  </ul>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
+<script src="assets/js/functions-min.js"></script>
+</body>
 </html>
